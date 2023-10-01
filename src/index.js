@@ -1,23 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import {IntlProvider} from 'react-intl';
 import Login from './components/login';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
 import Home from "./components/home";
 import Detail from "./components/detail";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import localeEsMessages from "./locales/es";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <BrowserRouter>
-       <Routes>
-         <Route path="/" element={<Login />} />
-         <Route path="/home" element={<Home />} />
-         <Route path="/home/:cardId" element={<Detail />} />
-       </Routes>
-  </BrowserRouter>
+  <IntlProvider locale="es-ES" messages={localeEsMessages}>
+    <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Login />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/home/:carModel" element={<Detail />} />
+        </Routes>
+    </BrowserRouter>
+  </IntlProvider>
 );
 
 // If you want your app to work offline and load faster, you can change

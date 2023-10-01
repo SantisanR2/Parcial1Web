@@ -1,5 +1,7 @@
 import { useParams } from "react-router-dom";
 import Card from "react-bootstrap/Card";
+import { FormattedMessage } from "react-intl";
+
 export default function Detail() {
  const params = useParams();
 
@@ -14,7 +16,7 @@ export default function Detail() {
 
  return (
     <Card style={{ width: "18rem", height: "24rem" }} className="mb-3">
-    {random() && <Card.Text>Usted es admin</Card.Text>}
+    {random() && <Card.Text><FormattedMessage id="Admin"/></Card.Text>}
     <Card.Img
       style={{ height: "14rem" }}
       variant="top"

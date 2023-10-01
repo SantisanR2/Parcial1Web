@@ -1,0 +1,9 @@
+{
+    "Correo": "Correo",
+    "Contraseña": "Contraseña",
+    "InicioSesion": "Inicio de sesión",
+    "FormatoCorreo": "No tiene formato de correo",
+    "FormatoContraseña": "Su contraseña no cuenta con al menos 6 caracteres de largo",
+    "ListadoPartes": "Listado de partes",
+    "Admin": "Usted es un admin"
+}

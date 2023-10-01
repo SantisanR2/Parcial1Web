@@ -1,0 +1,9 @@
+{
+    "Correo": "Email",
+    "Contraseña": "Password",
+    "InicioSesion": "Log in",
+    "FormatoCorreo": "That is not a valid email address",
+    "FormatoContraseña": "Your password must be at least 6 characters long",
+    "ListadoPartes": "List of parts",
+    "Admin": "You are an administrator"
+}

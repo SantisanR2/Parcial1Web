@@ -1,6 +1,7 @@
 import Parte from "./parte";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import { FormattedMessage } from "react-intl";
 
 const { useEffect, useState } = require("react");
 
@@ -18,7 +19,7 @@ function Home() {
 
  return (
    <div className="container">
-     <h2 className="mt-2">Listado de partes</h2>
+     <h2 className="mt-2"><FormattedMessage id="ListadoPartes"/></h2>
      <hr></hr>
      <Row>
        {home.map((parte) => (
